@@ -8,11 +8,9 @@ class User {
   }
   ageCompare(selectedUser) {
     if (this.age < selectedUser.age) {
-      return console.log("MINORE");
+      return console.log(this.firstName + " è più piccolo di " + selectedUser.firstName);
     } else if (this.age > selectedUser.age) {
-      return console.log("MAGGIORE");
-    } else {
-      return console.log("sono uguali");
+      return console.log(this.firstName + " è più grande di " + selectedUser.firstName);
     }
   }
 }
